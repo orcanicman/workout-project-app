@@ -13,17 +13,7 @@ export default function Home() {
       </section>
 
       <section className="mb-6 px-6">
-        <Search
-        // onChange={(e) =>
-        //   setFilteredMenuItems(
-        //     props.initialCards.filter((menuItem) =>
-        //       menuItem.name
-        //         .toLowerCase()
-        //         .includes(e.target.value.toLowerCase())
-        //     )
-        //   )
-        // }
-        />
+        <Search />
       </section>
 
       <section
@@ -59,9 +49,6 @@ export default function Home() {
             img="/lock-closed.svg"
             className="bg-slate-400"
           />
-          {/* {filteredMenuItems.map((card, i) => (
-              <Card key={i} {...card} />
-            ))} */}
         </ul>
       </section>
     </main>

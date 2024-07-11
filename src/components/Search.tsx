@@ -8,7 +8,7 @@ export const Search = ({
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }) => {
   return (
-    <div className="bg-blue-100 rounded-xl flex p-3 space-x-2">
+    <div className="bg-slate-100 rounded-xl flex p-3 space-x-2">
       <Image
         src={"/search-icon.svg"}
         alt="menu button"
@@ -18,7 +18,7 @@ export const Search = ({
       <input
         onChange={onChange}
         type="text"
-        className="bg-blue-100 grow"
+        className="bg-slate-100 grow"
         placeholder="Search"
       />
     </div>
