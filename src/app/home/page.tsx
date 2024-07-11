@@ -18,7 +18,10 @@ export default function Home() {
 
       <section
         className="overflow-y-auto pt-0 p-6"
-        style={{ maxHeight: "calc(100vh - 260px)" }}
+        style={{
+          maxHeight: "calc(100vh - 260px)",
+          height: "calc(100vh - 260px)",
+        }}
       >
         <ul className="grid grid-cols-2 gap-4">
           <Card
@@ -28,27 +31,16 @@ export default function Home() {
             img="/logo.svg"
             className="bg-blue-700"
           />
-          <Card
-            name="In development"
-            description="Coming soon..."
-            link="#"
-            img="/lock-closed.svg"
-            className="bg-slate-400"
-          />
-          <Card
-            name="In development"
-            description="Coming soon..."
-            link="#"
-            img="/lock-closed.svg"
-            className="bg-slate-400"
-          />
-          <Card
-            name="In development"
-            description="Coming soon..."
-            link="#"
-            img="/lock-closed.svg"
-            className="bg-slate-400"
-          />
+          {new Array(8).fill("", 0, 8).map((_e, i) => (
+            <Card
+              key={i}
+              name="In development"
+              description="Coming soon..."
+              link="#"
+              img="/lock-closed.svg"
+              className="bg-slate-400"
+            />
+          ))}
         </ul>
       </section>
     </main>
