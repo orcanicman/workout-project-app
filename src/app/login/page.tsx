@@ -44,7 +44,7 @@ export default function Login() {
               className="py-1 grow"
             />
           </section>
-          <section className="flex items-center my-6 justify-between">
+          <section className="flex items-center my-6 justify-between space-x-2">
             <span className="flex items-center space-x-2">
               <input type="checkbox" className="w-4 h-4" id="checkbox" />
               <label htmlFor="checkbox">Remember me</label>
@@ -63,11 +63,24 @@ export default function Login() {
               Login
             </button>
           </section>
+          <section className="flex items-center my-2">
+            <Link href={"#"}>
+              Don&apos;t have an account yet?{" "}
+              <span className="underline text-blue-700">Sign up</span>
+            </Link>
+          </section>
         </form>
       </main>
       <footer>
         <Image
-          alt="BottomImage"
+          alt="logo"
+          src={"/logo.svg"}
+          width={140}
+          height={140}
+          className="mx-auto -mb-16"
+        />
+        <Image
+          alt="footer"
           src={"/login-footer.svg"}
           width={500}
           height={250}
