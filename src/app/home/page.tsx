@@ -79,12 +79,7 @@ const NavigationBar = () => {
           <Image src={"/bell.svg"} alt="menu button" width={24} height={24} />
         </button>
         <button className="w-12 flex justify-center h-12 rounded-full items-center overflow-hidden">
-          <Image
-            src={"/placeholder-user-img2.jpg"}
-            alt="menu button"
-            width={48}
-            height={48}
-          />
+          <Image src={"/user.svg"} alt="menu button" width={48} height={48} />
         </button>
       </section>
     </nav>
